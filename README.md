@@ -13,7 +13,7 @@ python create_tables.py
 
 - Загрузка данных в базу
 ```shell
-python load_fixture.py
+python load_fixtures.py
 ```
 Скрпит читает файл fixtures.json и загружает данные в базу. Если данные уже загружены - выводит соответсвующее сообщение. 
 
@@ -23,19 +23,19 @@ python load_fixture.py
 ```shell
 export FLASK_APP=run.py
 export FLASK_ENV='development'
-flask run
+flask run -h localhost -p 25000
 ```
 
 ### CMD (Windows)
 ```shell
 set FLASK_APP=run.py
 set FLASK_ENV=development
-flask run
+flask run -h localhost -p 25000
 ```
 
 ### PowerShell (Windows)
 ```shell
 $env:FLASK_APP = "run"
 $env:FLASK_ENV = "development"
-flask run
+flask run -h localhost -p 25000
 ```
